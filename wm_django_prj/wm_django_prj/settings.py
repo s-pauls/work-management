@@ -13,8 +13,12 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
+from .myenv import get_envvars
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+# Read environments variables in PROD
+get_envvars(BASE_DIR / '.env', ignore_not_found_error=True)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
