@@ -1,10 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{% block title %}{% endblock %}</title>
-</head>
-<body>
-{% block content %}{% endblock %}
-</body>
-</html>
+<html lang="en" class="no-js">
+	<head>
+		{% load static %}
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="shortcut icon" href="{% static 'portfolio/img/fav.png' %}">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta charset="UTF-8">
+		<title>{% block title %}{% endblock %}</title>
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+		<link rel="stylesheet" href="{% static 'portfolio/css/A.linearicons.css+font-awesome.min.css+bootstrap.css+magnific-popup.css,Mcc.yJoU4ilZPf.css.pagespeed.cf.YO2lFmrYRe.css' %}" />
+		<link rel="stylesheet" href="{% static 'portfolio/css/jquery-ui.css' %}">
+		<link rel="stylesheet" href="{% static 'portfolio/css/A.nice-select.css+animate.min.css+owl.carousel.css+main.css,Mcc.aBKHVoSatL.css.pagespeed.cf.jAbG4QPP3h.css' %}" />
+		<body>
+
+			{% block body %}{% endblock %}
+
+			<script src="{% static 'portfolio/js/vendor/jquery-2.2.4.min.js' %}"></script>
+			<script src="{% static 'portfolio/js/popper.min.js' %}"></script>
+			<script src="{% static 'portfolio/js/easing.min.js' %}"></script>
+			<script src="{% static 'portfolio/js/waypoints.min.js' %}"></script>
+			<script src="{% static 'portfolio/js/jquery.counterup.min.js' %}"></script>
+			<script src="{% static 'portfolio/js/isotope.pkgd.min.js' %}"></script>
+			<script src="{% static 'portfolio/js/superfish.min.js' %}"></script>
+			<script src="{% static 'portfolio/js/jquery.magnific-popup.min.js' %}"></script>
+			<script src="{% static 'portfolio/js/jquery.tabs.min.js' %}"></script>
+			<script src="{% static 'portfolio/js/owl.carousel.min.js' %}"></script>
+			<script src="{% static 'portfolio/js/simple-skillbar.js' %}"></script>
+			<script src="{% static 'portfolio/js/main.js' %}"></script>
+			<script src="https://use.fontawesome.com/dddc050c4e.js"></script>
+		</body>
+	</html>
