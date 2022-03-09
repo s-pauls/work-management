@@ -1,9 +1,27 @@
-{% extends 'portfolio/base.html' %}
+{% extends 'portfolio/main.html' %}
+{% load static %}
 
 {% block title %}
-Церковь 'Благодать' (Гомель)
+Home
 {% endblock %}
 
 {% block content %}
-<h1>Церковь 'Благодать' (Гомель)</h1>
+<section class="banner-area">
+    <div class="container">
+        <div class="row fullscreen align-items-center justify-content-between">
+            <div class="col-lg-6 col-md-6 banner-right d-flex align-self-end">
+                <img class="img-fluid" src="{% static 'portfolio/img/xhero-img.png.pagespeed.ic.INRfo5JT2o.webp' %}" alt="" data-pagespeed-url-hash="1463595575"  >
+            </div>
+            <div class="col-lg-6 col-md-6 banner-left">
+                <h6>This is me</h6>
+                <h1>Sergey Pauls</h1>
+                <p>
+                    I am .NET Software Engineer and I have plenty of experience in IT. I have experience delivering products using Scrum and Kanban as a Software Engineer and Tech Lead.
+                </p>
+                <!-- <a href="#" class="primary-btn text-uppercase">discover now</a> -->
+            </div>
+
+        </div>
+    </div>
+</section>
 {% endblock %}
